@@ -5,11 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.css']
 })
-export class ContainerComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+export class UserListComponent implements OnInit {
+  names: string[]; 
+  constructor() { 
+     this.names = ['Escavatori', 'Bulldozer.', 'Motolivellatrici', 'Abbattitrici forestali','Macchine di demolizione','Camion betoniere','Dumper','Macchine per miniere sotterranee','Esboscatrici','Gru forestali',]; 
   }
-
+  ngOnInit() {
+  }
 }
